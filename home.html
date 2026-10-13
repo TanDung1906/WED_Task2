@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" href="index.html">Management System</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">Help</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5 px-lg-5">
+    <!-- Welcome Box -->
+    <div class="home-welcome-card mx-auto" style="max-width: 900px;">
+      <h1 class="home-welcome-title">Welcome to My Website</h1>
+      <p class="home-welcome-subtitle">Learn web development with our courses.</p>
+    </div>
+
+    <!-- Our Courses -->
+    <div class="mx-auto" style="max-width: 1300px;">
+      <h2 class="courses-heading">Our Courses</h2>
+
+      <div class="row g-4">
+        <!-- HTML Card -->
+        <div class="col-md-6">
+          <div class="course-card course-card-html">
+            <div>
+              <h3>HTML</h3>
+              <p>Learn how to create the structure of web pages using headings, paragraphs, images, and links.</p>
+            </div>
+            <button type="button" class="btn btn-course btn-course-html" data-bs-toggle="modal" data-bs-target="#htmlModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- CSS Card -->
+        <div class="col-md-6">
+          <div class="course-card course-card-css">
+            <div>
+              <h3>CSS</h3>
+              <p>Learn how to style web pages with colors, fonts, spacing, and attractive layouts.</p>
+            </div>
+            <button type="button" class="btn btn-course btn-course-css" data-bs-toggle="modal" data-bs-target="#cssModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- Bootstrap Card -->
+        <div class="col-md-6">
+          <div class="course-card course-card-bootstrap">
+            <div>
+              <h3>Bootstrap</h3>
+              <p>Build responsive websites quickly using Bootstrap's grid system and components.</p>
+            </div>
+            <button type="button" class="btn btn-course btn-course-bootstrap" data-bs-toggle="modal" data-bs-target="#bootstrapModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- JavaScript Card -->
+        <div class="col-md-6">
+          <div class="course-card course-card-js">
+            <div>
+              <h3>JavaScript</h3>
+              <p>Make web pages interactive with button clicks, form validation, and dynamic content.</p>
+            </div>
+            <button type="button" class="btn btn-course btn-course-js" data-bs-toggle="modal" data-bs-target="#jsModal">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- HTML Modal -->
+  <div class="modal fade" id="htmlModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Course Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="fw-bold mb-2">HTML</h4>
+          <p class="text-secondary mb-0">HTML stands for HyperText Markup Language. It creates the structure of a web page using headings, paragraphs, images, and links.</p>
+        </div>
+        <div class="modal-footer border-top-0 pt-0">
+          <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS Modal -->
+  <div class="modal fade" id="cssModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Course Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="fw-bold mb-2">CSS</h4>
+          <p class="text-secondary mb-0">CSS stands for Cascading Style Sheets. It controls the appearance of web pages, including colors, fonts, spacing, and layouts.</p>
+        </div>
+        <div class="modal-footer border-top-0 pt-0">
+          <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="bootstrapModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Course Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="fw-bold mb-2">Bootstrap</h4>
+          <p class="text-secondary mb-0">Bootstrap is a front-end framework. It provides ready-made components and a responsive grid system to build websites quickly.</p>
+        </div>
+        <div class="modal-footer border-top-0 pt-0">
+          <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modal -->
+  <div class="modal fade" id="jsModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Course Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="fw-bold mb-2">JavaScript</h4>
+          <p class="text-secondary mb-0">JavaScript is a programming language that makes web pages interactive. It can handle button clicks, form validation, popups, and dynamic content.</p>
+        </div>
+        <div class="modal-footer border-top-0 pt-0">
+          <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div>Management System</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
